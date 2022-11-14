@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    background-color: yellowgreen;;
+}
+
+.pattern-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pattern-section span {
+    margin-right: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.new-animation {
+    text-align: center;
+    font-size: 30px;
+}
+
+.first-pattern {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    background-color: aqua;
+    animation: myFirstAnimation;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myFirstAnimation {
+    from {
+        transform: skew(20deg);
+    }
+
+    to {
+        transform: skew(-20deg);
+    }
+}
+
+.second-pattern {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    background-color: aqua;
+    animation: mySecondAnimation;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes mySecondAnimation {
+    from {
+        transform: skewY(10deg);;
+    }
+
+    to {
+        transform: skewY(-10deg);;
+    }
+}
+
+.third-pattern {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    background-color: aqua;
+    animation: myThirdAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myThirdAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fourth-first-pattern {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    background-color: aqua;
+    animation: myFourthFirstAnimation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myFourthFirstAnimation {
+    100% {
+        transform: rotateX(80deg)
+    }
+}
+
+.fourth-second-pattern {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    background-color: aqua;
+    animation: myFourthSecondAnimation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myFourthSecondAnimation {
+    100% {
+        transform: rotateY(80deg);
+    }
+}
+
+.fourth-third-pattern {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    background-color: aqua;
+    animation: myFourthThirdAnimation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myFourthThirdAnimation {
+    100% {
+        transform: rotateZ(90deg);
+    }
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 4s;
+}
+
+.first:hover {
+    width: 300px;
+}
+
+.second {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: all;
+    transition-duration: 4s;
+}
+
+.second:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 4s;
+}
+
+.third:hover {
+    width: 300px;
+}
+
+.fourth {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 4s;
+}
+
+.fourth:hover {
+    width: 300px;
+}
+
+.fifth {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 4s;
+}
+
+.fifth:hover {
+    width: 300px;
+}
+
+.sixth {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 4s;
+}
+
+.sixth:hover {
+    width: 300px;
+}
+
+.seventh {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition-property: width;
+    transition-duration: 4s;
+}
+
+.seventh:hover {
+    width: 300px;
+}

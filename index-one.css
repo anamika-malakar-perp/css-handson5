@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+.sky {
+    background-image: url(sky.jpg);
+    height: 330px;
+    position: relative;
+    width: 1000vw;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: trackanimation 25s linear infinite;
+}
+
+.sun {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+
+.title {
+    position: absolute;
+    left: 470px;
+    top: 0;
+    font-size: 40px;
+}
+
+.happy {
+    background-color: orange;
+}
+
+.independence {
+    background-color: #fff;
+}
+
+.day {
+    background-color: green;
+}
+
+.city {
+    background-image: url(city.png);
+    height: 260px;
+    width: 1000vw;
+    background-repeat: repeat-x;
+    animation: trackanimation 25s linear infinite;
+}
+
+.road {
+    background-image: url(road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000vw;
+    height: 20vh;
+    animation: trackanimation 25s linear infinite;
+}
+
+.car {
+    position: absolute;
+    bottom: 19px;
+    left: 529px;
+}
+
+.wheel {
+    position: absolute;
+    animation: wheelanimation linear 1s infinite;
+}
+
+.wheel1 {
+    background-image: url(wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 64px;
+    bottom: 56px;
+    left: 813px;
+}
+
+.wheel2 {
+    background-image: url(wheel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 64px;
+    bottom: 55px;
+    left: 568px;
+}
+
+.flag {
+    background-image: url(flag.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 19px;
+    left: 529px;
+}
+
+/* Wheel animation */
+@keyframes wheelanimation{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Moving the track backwards */
+@keyframes trackanimation {
+    100% {
+        transform: translate(-500vw);
+    }
+}
