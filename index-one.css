@@ -1,11 +1,22 @@
 body {
-    margin: 0;
+    overflow-x: hidden;
+}
+
+.box {
+    border: 7px solid orange;
+    border-top-style: hidden;
+    border-right-color: green;
+    border-top: 7px solid #fff;
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .sky {
+    height: 597px;
     background-image: url(sky.jpg);
-    height: 330px;
-    position: relative;
+    position: absolute;
     width: 1000vw;
     background-repeat: repeat-x;
     background-size: cover;
@@ -13,6 +24,11 @@ body {
 }
 
 .sun {
+    background-image: url(sun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 25px;
     right: 50px;
@@ -20,7 +36,7 @@ body {
 
 .title {
     position: absolute;
-    left: 470px;
+    left: 410px;
     top: 0;
     font-size: 40px;
 }
@@ -40,7 +56,9 @@ body {
 .city {
     background-image: url(city.png);
     height: 260px;
+    top: 346px;
     width: 1000vw;
+    position: absolute;
     background-repeat: repeat-x;
     animation: trackanimation 25s linear infinite;
 }
@@ -56,8 +74,13 @@ body {
 }
 
 .car {
+    background-image: url(car.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
     position: absolute;
-    bottom: 19px;
+    top: 543px;
     left: 529px;
 }
 
@@ -86,13 +109,23 @@ body {
     left: 568px;
 }
 
+.orange-border {
+    background-color: orange;
+    width: 10px;
+    height: 96vh;
+    z-index: 10;
+    position: absolute;
+}
+
 .flag {
     background-image: url(flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 19px;
-    left: 529px;
+    bottom: 134px;
+    left: 801px;
 }
 
 /* Wheel animation */
